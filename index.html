@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css animation</title>
+
+    <style>
+      .box {
+        width: 150px;
+        height: 150px;
+        background: red;
+        border-radius: 150px;
+        display: inline-block;
+        margin-left: 20px;
+        animation-name: bouncy_ball;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
+
+      .box0 {
+        background: salmon;
+        animation-delay: 1s;
+      }
+      .box1 {
+        background: greenyellow;
+        animation-delay: 1.6s;
+      }
+      .box2 {
+        background: blue;
+        animation-delay: 2s;
+      }
+      .box3 {
+        background: orange;
+        animation-delay: 2.6s;
+      }
+      .box4 {
+        background: hotpink;
+        animation-delay: 3s;
+      }
+      .box5 {
+        background: midnightblue;
+        animation-delay: 3.6s;
+      }
+
+      @keyframes bouncy_ball {
+        0% {
+          transform: translateY(0px);
+        }
+        100% {
+          transform: translateY(430px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box0 box"></div>
+    <div class="box1 box"></div>
+    <div class="box2 box"></div>
+    <div class="box3 box"></div>
+    <div class="box4 box"></div>
+    <div class="box5 box"></div>
+  </body>
+</html>
